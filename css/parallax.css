@@ -1,0 +1,47 @@
+/*------PARALLAX----------------*/
+.parallax_container { position: relative; margin: 0 auto; padding: 0 0 45px 0; }
+
+.parallax_container img { display: block; width: 100%; }
+
+.scene { padding: 0; margin: 0; }
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+  .parallax_container { width: 800px; }
+  .desc{ position:absolute; text-align:left;  line-height:1.2; font-size:1rem; }
+
+  .desc.one{ top:146px; left:-65px; width:190px; }
+  .desc.two { top:186px; left:-100px; width:190px; }
+  .desc.three { top:445px; left:-10px; width:170px;}
+  .desc.four { top:575px; left:-70px; width:190px;}
+  .desc.five { top:70px; left:720px; width:190px;}
+  .desc.six { top:160px; left:675px; width:190px;}
+  .desc.seven { top:246px; left:695px; width:190px;}
+  .desc.eight { top:385px; left:680px; width:190px;}
+  .desc.nine { top:480px; left:670px; width:190px;}
+  .desc.ten { top:60px; left:-185px; width:260px;}
+  .desc.eleven { top:260px; left:-175px; width:230px;}
+  .desc.twelve { top:470px; left:-195px; width:290px;}
+  .desc.thirteen { top:70px; left:730px; width:250px;}
+  .desc.fourteen { top:295px; left:725px; width:250px;}
+  .desc.fifteen { top:535px; left:720px; width:250px;}
+
+  .desc.sixteen { font-size:1.2em; font-weight: 600; top:120px; left:0px; width:190px; color: #ff9101}
+  .desc.seventeen {font-size:1.2em; font-weight: 600; top:235px; left:0px; width:250px; color: #ff9101}
+  .desc.eighteen {font-size:1.2em; font-weight: 600; top:425px; left:0px; width:250px;  color: #ff9101}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px),   /*-----iPhone4----*/
+        only screen and (min-device-width: 320px) and (max-device-height: 568px),
+        only screen and (min-device-width: 375px) and (max-device-height: 667px),
+        only screen and (min-device-width: 414px) and (max-device-height: 736px),
+        only screen and (min-device-width: 320px) and (max-device-height: 640px),
+        only screen and (min-device-width: 320px) and (max-device-height: 640px),
+        only screen and (min-device-width: 360px) and (max-device-height: 640px){
+          .parallax_container{display: none !important}
+        }
+
+/*iPad in landscape-----------------*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+
+}
