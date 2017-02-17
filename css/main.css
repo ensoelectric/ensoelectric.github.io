@@ -74,6 +74,7 @@ article { position:relative; }
       padding: 25px 0 35px 0;
       }
 
+    .article-paragraph strong{font-weight:normal;}
     .spacer{width:100%; height:50px;}
 
     .parallax_container { width: 800px; }
@@ -142,6 +143,7 @@ article { position:relative; }
             text-transform: uppercase;
             padding-bottom: 1rem;
           }
+    .article-paragraph strong{font-weight:normal;}
           .visible-phone { display: inline-block !important; }
           .hidden-phone { display: none !important; }
 
@@ -235,6 +237,8 @@ article { position:relative; }
               padding: 0;
               padding: 25px 0 35px 0;
             }
+    .article-paragraph strong{font-weight:normal;}
+
             .intro { font-size: 1.5rem; margin-top: 30px; }
             .mailus {margin-top:2.5rem; font-size:1.1rem; text-align:right;}
 
