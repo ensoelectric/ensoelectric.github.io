@@ -108,9 +108,9 @@ article { position:relative; }
 
     .card { text-align: center; }
     .card .image { width: 160px; height: 160px; margin:0 auto; }
-    .card .minimal { background: url(/img/1.png) center center no-repeat; }
-    .card .standart { background: url(/img/2.png) no-repeat center center; }
-    .card .comfort { background: url(/img/3.png) no-repeat center center; }
+    .card .minimal { background: url(/img/minimal.png) center center no-repeat; }
+    .card .standart { background: url(/img/standart.png) no-repeat center center; }
+    .card .comfort { background: url(/img/comfort.png) no-repeat center center; }
     .card .title span { display: block; margin: 15px 0 0; font: 300 1.5rem Roboto; }
     .card .title { margin: 0 0 6px; font: 400 1.8rem Roboto; }
     .card .description { font: 300 1.2rem/1.6 Roboto; padding:0 1rem; }
@@ -176,9 +176,9 @@ article { position:relative; }
 
             .card { text-align: left; margin-bottom: 25px; text-align:center;}
             .card .image { width: 160px; height: 160px; margin:0 auto;}
-            .card .minimal { background: url(/img/1.png) center center no-repeat; }
-            .card .standart { background: url(/img/2.png) no-repeat center center; }
-            .card .comfort { background: url(/img/3.png) no-repeat center center; }
+            .card .minimal { background: url(/img/minimal.png) center center no-repeat; }
+            .card .standart { background: url(/img/standart.png) no-repeat center center; }
+            .card .comfort { background: url(/img/comfort.png) no-repeat center center; }
             .card .title span { display: block; margin: 15px 0 0; font: 300 1rem Roboto; }
             .card .title { margin: 0 0 6px; font: 400 1.5rem Roboto; }
             .card .description { font: 300 1rem/1.2 Roboto; padding:0 1rem;}
@@ -284,9 +284,9 @@ article { position:relative; }
         .note { margin: 15px 0; text-align:center; }
         .card { text-align: center;}
         .card .image { width: 160px; height: 160px; margin:0 auto; }
-        .card .minimal { background: url(/img/1.png) center center no-repeat; }
-        .card .standart { background: url(/img/2.png) no-repeat center center; }
-        .card .comfort { background: url(/img/3.png) no-repeat center center; }
+        .card .minimal { background: url(/img/minimal.png) center center no-repeat; }
+        .card .standart { background: url(/img/standart.png) no-repeat center center; }
+        .card .comfort { background: url(/img/comfort.png) no-repeat center center; }
         .card .title span { display: block; margin: 15px 0 0; font: 300 1rem Roboto; }
         .card .title { margin: 0 0 6px; font: 400 1.8rem Roboto; }
         .card .description { font: 300 1rem/1.6 Roboto; padding:0 1rem; }
@@ -310,9 +310,9 @@ article { position:relative; }
 
     .card { text-align: left; }
     .card .image { width: 160px; height: 160px; margin:0 15px 0 0; float: left; }
-    .card .minimal { background: url(/img/1.png) center center no-repeat; }
-    .card .standart { background: url(/img/2.png) no-repeat center center; }
-    .card .comfort { background: url(/img/3.png) no-repeat center center; }
+    .card .minimal { background: url(/img/minimal.png) center center no-repeat; }
+    .card .standart { background: url(/img/standart.png) no-repeat center center; }
+    .card .comfort { background: url(/img/comfort.png) no-repeat center center; }
     .card .title span { display: block; margin: 15px 0 0; font: 300 1rem Roboto; }
     .card .title { margin: 0 0 6px; font: 400 1.5rem Roboto; }
     .card .description { font: 300 1rem/1.2 Roboto; padding:0 1rem;}
