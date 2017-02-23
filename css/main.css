@@ -42,9 +42,8 @@ article { position:relative; }
 /*-------- / NAV -----*/
 .float-shadow:before { background: transparent; }
 
-.visible-phone { display:none !important; }
-.visible-phone-portrait-block { display:none !important; }
-.visible-phone-landscape-block { display:none !important; }
+.visible-phone-block { display:none !important; }
+.visible-tablet-portrait-block { display:none !important; }
 
 .parallax_container { position: relative; margin: 0 auto; padding: 0 0 45px 0; }
 .parallax_container img { display: block; width: 100%; }
@@ -144,8 +143,7 @@ article { position:relative; }
             padding-bottom: 1rem;
           }
     .article-paragraph strong{font-weight:normal;}
-          .visible-phone { display: inline-block !important; }
-          .hidden-phone { display: none !important; }
+          .visible-phone-block { display: block !important; }
 
           .parallax_container{display: none !important}
 
@@ -197,7 +195,7 @@ article { position:relative; }
         only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape),   /* Samsung Galaxy S3 */
         only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape),   /* Samsung Galaxy S4 */
         only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape){   /* Samsung Galaxy S5 */
-          .visible-phone-landscape-block{ display: block !important; }
+          .visible-phone-block{ display: block !important; }
 
           .mailus {margin-top:2.5rem; font-size:1rem; text-align:left;}
           .intro { font-size: 1.15rem; margin-top: 30px; }
@@ -304,8 +302,7 @@ article { position:relative; }
 
 /*iPad in portrait-----------------*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-
-        .rotate {display: block !important; text-align:center;}
+    .visible-tablet-portrait-block { display:block !important;}
     .parallax_container{display: none !important}
 
     .card { text-align: left; }
