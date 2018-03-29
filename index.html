@@ -15,15 +15,15 @@ keywords: ""
     <div class="modal-content" style="text-align:center;">
       <div class="modal-body">
           <div class="form-group"> <h5 class="modal-title" id="exampleModalLabel">ОСТАВЬТЕ ТЕЛЕФОН</h5> и мы Вам перезвоним</div>
-        <form action="http://formspree.io/hi@ensoelectric.ru" method="post">
+        <form action="https://formspree.io/hi@ensoelectric.ru" method="post">
           <input type="hidden" name="_language" value="ru" />
-          <input type="hidden" name="_next" value="ensoelectric.ru" />
+          <input type="hidden" name="_next" value="/" />
           <input type="hidden" name="_subject" value="ПЕРЕЗВОНИТЕ МНЕ" />
           <div class="form-group">
-            <input type="tel" class="form-control" id="recipient-name" placeholder="Имя" required>
+            <input type="name" class="form-control" id="recipient-name" placeholder="Имя" name="_name" required>
           </div>
           <div class="form-group">
-            <input type="tel" class="form-control" id="recipient-tel" placeholder="Телефон" pattern="(\+?\d[- .]*){7,13}" required>
+            <input type="tel" class="form-control" id="recipient-tel" placeholder="Телефон" pattern="(\+?\d[- .]*){7,13}" name="_tel" required>
           </div>
 
 <div class="modal-footer">
@@ -40,15 +40,15 @@ keywords: ""
       <div class="modal-body">
         <div class="form-group"><h5 class="modal-title" id="exampleModalLabel">ОСТАВЬТЕ ЗАЯВКУ</h5> нам менеджер свяжется с Вами</div>
             <h5>
-        <form action="http://formspree.io/hi@ensoelectric.ru" method="post">
+        <form action="https://formspree.io/hi@ensoelectric.ru" method="post">
           <input type="hidden" name="_language" value="ru" />
-          <input type="hidden" name="_next" value="ensoelectric.ru" />
+          <input type="hidden" name="_next" value="/" />
           <input type="hidden" id="subject" name="_subject" value="" />
           <div class="form-group">
-            <input type="name" class="form-control" id="recipient-name" placeholder="Имя" required>
+            <input type="name" class="form-control" id="recipient-name" placeholder="Имя" name="_name" required>
           </div>
           <div class="form-group">
-            <input type="tel" class="form-control" id="recipient-tel" placeholder="Телефон" pattern="(\+?\d[- .]*){7,13}">
+            <input type="tel" class="form-control" id="recipient-tel" placeholder="Телефон" pattern="(\+?\d[- .]*){7,13}" name="_tel">
           </div>
           <div class="form-group">
             <input type="email" class="form-control" id="recipient-name" name="_replyto" placeholder="E-mail" required>
@@ -209,11 +209,11 @@ keywords: ""
               </div>
 
               <div class="col-md-6" style="text-align:right;">
-                   <form action="http://formspree.io/hi@ensoelectric.ru" method="post">
+                   <form action="https://formspree.io/hi@ensoelectric.ru" method="post">
                     <input type="hidden" name="_language" value="ru" />
-                    <input type="hidden" name="_next" value="ensoelectric.ru" />
-                    <div><input type="name" placeholder="Имя" name="_replyto"required></div>
-                    <div><input type="email" placeholder="E-mail" name="_replyto"required></div>
+                    <input type="hidden" name="_next" value="/" />
+                    <div><input type="text" placeholder="Имя" name="_name" required></div>
+                    <div><input type="email" placeholder="E-mail" name="_replyto" required></div>
                     <div><textarea name="body"  placeholder="Сообщение"></textarea></div>
                     <button type="submit" value="Отправить" class="btn btn-default" style="border-radius:0;">Отправить</button>
                 </form>
