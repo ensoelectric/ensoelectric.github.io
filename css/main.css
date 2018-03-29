@@ -4,6 +4,8 @@ body {
   padding: 20px 0;
   color: #000;
   background-color: #fff;
+  padding-right: 0 !important ;
+  overflow-y: scroll!important;
 }
 a { color: #0088cc; text-decoration: none; }
 a:focus, a:hover { color: #0088cc; text-decoration: underline; }
@@ -49,6 +51,34 @@ article { position:relative; }
 .parallax_container img { display: block; width: 100%; }
 .scene { padding: 0; margin: 0; }
 
+input, textarea{
+    webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+    font-family: inherit;
+    font-style: inherit;
+    vertical-align: baseline;
+    font-size: 15px;
+    letter-spacing: .025em;
+    line-height: 1.55556;
+    font-weight: 200;
+    display: block;
+    position: relative;
+    z-index: 2;
+    margin: 0 0 30px;
+    width: 100%;
+    height: 40px;
+    color: #000;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(144,158,167,.5);
+    border-radius: 0;"
+}
+
+.modal-content{
+    border-radius:0;
+}
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
     article { padding: 90px 0 0 0; }
@@ -99,11 +129,41 @@ article { position:relative; }
     .desc.seventeen {font-size:1.2em; font-weight: 600; top:235px; left:0px; width:250px; color: #ff9101}
     .desc.eighteen {font-size:1.2em; font-weight: 600; top:425px; left:0px; width:250px;  color: #ff9101}
 
-    .questions .title { font-size: 1.3rem; font-weight: 600; }
-    .questions p { font-size: 1.1rem; }
-    .questions ul { font-size:1.1rem; line-height: 1.3; }
-    .questions li { margin-bottom: 10px; }
-    .note { margin: 0 auto; padding: 35px 0 0 0; font-size: .8rem; text-align: center; }
+    .title { padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    border: 0;
+    font-size: 2em;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: -.025em;
+    line-height: 1.11538;
+    color: #000;}
+
+    h3 {
+    color: rgb(158, 160, 166);
+    margin: 0;
+    vertical-align: baseline;
+    border: 0;
+    font-size: 1.7em;
+    margin:0 0 .5em;
+    font-weight: 300;
+    letter-spacing: -.025em;
+    }
+    p { font-size: 1.1rem;     padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    border: 0;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: .025em;
+    line-height: 1.55556;
+    font-weight: 300;
+    margin-bottom: 3em;
+    }
+
+
+    .note { margin: 0 auto; padding: 35px 0 35px 0; font-size: .8rem; text-align: center; }
 
     .card { text-align: center; }
     .card .image { width: 160px; height: 160px; margin:0 auto; }
@@ -147,10 +207,9 @@ article { position:relative; }
 
           .parallax_container{display: none !important}
 
-          .questions .title { font-size: 1.1rem; font-weight: 600; }
-          .questions p { font-size: 1rem; }
-          .questions ul { font-size:1rem; line-height: 1.3; }
-          .questions li { margin-bottom: 10px; }
+          .title { font-size: 1.1rem; font-weight: 600; }
+          p { font-size: 1rem; }
+         
 
           footer { vertical-align: middle; margin: 0 auto; padding: 35px 0 0; font-size: .9rem; }
           footer img {margin: 14px 0 0 0; width: auto; height: 20px; }
@@ -242,10 +301,9 @@ article { position:relative; }
 
             .note { margin: 0; padding: 0; font-size: .8rem; }
 
-            .questions .title { font-size: 1.5rem; font-weight: 600; }
-            .questions p { font-size: 1.15rem; }
-            .questions ul { font-size:1.15rem; line-height: 1.3; }
-            .questions li { margin-bottom: 10px; }
+            .title { font-size: 1.5rem; font-weight: 600; }
+            p { font-size: 1.15rem; }
+
 
 
 
@@ -323,3 +381,33 @@ article { position:relative; }
         .copyright { float:right; margin-right: 0; border:0; line-height: 50px; margin-right: 13px; font-size: .9rem; }
 
       }
+
+
+
+
+
+      .responsive-image {
+  max-width: 100%;
+}
+
+.cell img {
+  display: block;
+}
+
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(100% / 4);
+  }
+}
