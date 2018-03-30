@@ -104,6 +104,9 @@ input, textarea{
     font-weight: 300;
     letter-spacing: -.025em;
 }
+.cell{
+    border:1px solid white;
+}
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
     article { padding: 90px 0 0 0; }
