@@ -73,11 +73,36 @@ input, textarea{
     border: 0;
     background-color: transparent;
     border-bottom: 1px solid rgba(144,158,167,.5);
-    border-radius: 0;"
+    border-radius: 0;
 }
 
 .modal-content{
     border-radius:0;
+}
+
+.msg_page{
+    margin-top:90px;
+}
+
+.msg_page h1{
+    margin: 0;
+    vertical-align: baseline;
+    border: 0;
+    font-size: 2em;
+    margin:0 0 .5em;
+    font-weight: 300;
+    letter-spacing: -.025em;
+    line-height: 1.11538;
+    color: #000;
+}
+.msg_page h2{
+    color: rgb(158, 160, 166);
+    margin: 0;
+    vertical-align: baseline;
+    border: 0;
+    font-size: 1.7em;
+    font-weight: 300;
+    letter-spacing: -.025em;
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {

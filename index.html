@@ -15,15 +15,15 @@ keywords: ""
     <div class="modal-content" style="text-align:center;">
       <div class="modal-body">
           <div class="form-group"> <h5 class="modal-title" id="exampleModalLabel">ОСТАВЬТЕ ТЕЛЕФОН</h5> и мы Вам перезвоним</div>
-        <form action="http://formspree.io/hi@ensoelectric.ru" method="post">
+        <form action="https://formspree.io/hi@ensoelectric.ru" method="post">
           <input type="hidden" name="_language" value="ru" />
-          <input type="hidden" name="_next" value="ensoelectric.ru" />
+          <input type="hidden" name="_next" value="/message" />
           <input type="hidden" name="_subject" value="ПЕРЕЗВОНИТЕ МНЕ" />
           <div class="form-group">
-            <input type="tel" class="form-control" id="recipient-name" placeholder="Имя" required>
+            <input type="name" class="form-control" id="recipient-name" placeholder="Имя" name="_name" required>
           </div>
           <div class="form-group">
-            <input type="tel" class="form-control" id="recipient-tel" placeholder="Телефон" pattern="(\+?\d[- .]*){7,13}" required>
+            <input type="tel" class="form-control" id="recipient-tel" placeholder="Телефон" pattern="(\+?\d[- .]*){7,13}" name="_tel" required>
           </div>
 
 <div class="modal-footer">
@@ -38,22 +38,22 @@ keywords: ""
   <div class="modal-dialog" role="document">
     <div class="modal-content" style="text-align: center;">
       <div class="modal-body">
-        <div class="form-group"><h5 class="modal-title" id="exampleModalLabel">ОСТАВЬТЕ ЗАЯВКУ</h5> нам менеджер свяжется с Вами</div>
+        <div class="form-group"><h5 class="modal-title" id="exampleModalLabel">ОСТАВЬТЕ ЗАЯВКУ</h5> наш менеджер свяжется с Вами</div>
             <h5>
-        <form action="http://formspree.io/hi@ensoelectric.ru" method="post">
+        <form action="https://formspree.io/hi@ensoelectric.ru" method="post">
           <input type="hidden" name="_language" value="ru" />
-          <input type="hidden" name="_next" value="ensoelectric.ru" />
-          <input type="hidden" id="subject" name="_subject" value="" />
+          <input type="hidden" name="_next" value="/message" />
+          <input type="hidden" id="subject" name="_subject" value="ЗАЯВКА" />
           <div class="form-group">
-            <input type="name" class="form-control" id="recipient-name" placeholder="Имя" required>
+            <input type="name" class="form-control" id="recipient-name" placeholder="Имя" name="_name" required>
           </div>
           <div class="form-group">
-            <input type="tel" class="form-control" id="recipient-tel" placeholder="Телефон" pattern="(\+?\d[- .]*){7,13}">
+            <input type="tel" class="form-control" id="recipient-tel" placeholder="Телефон" pattern="(\+?\d[- .]*){7,13}" name="_tel">
           </div>
           <div class="form-group">
             <input type="email" class="form-control" id="recipient-name" name="_replyto" placeholder="E-mail" required>
           </div>
-       
+
       </div>
       <div class="modal-footer">
         <button type="submit" value="Send" class="btn btn-default" style="border-radius:0;">Оставить заявку</button>
@@ -126,11 +126,11 @@ keywords: ""
         </article>
 </div><div class="justify-container">
     <article style="margin-top:25px;">
- 
+
        <div class="grid">
     <div class="cell">
       <a data-fancybox="gallery" href="img/IMG_0542.jpg"><img src="img/IMG_0542.jpg" class="responsive-image"></a>
-    </div> 
+    </div>
     <div class="cell">
       <a data-fancybox="gallery" href="img/IMG_0492.jpg"><img src="img/IMG_0492.jpg" class="responsive-image"></a>
     </div>
@@ -153,7 +153,7 @@ keywords: ""
       <a data-fancybox="gallery" href="img/IMG_0466.jpg"><img src="img/IMG_0466.jpg" class="responsive-image"></a>
     </div>
   </div>
-        <div style="padding:90px 0 45px 0; text-align: center;"><button type="button" class="btn btn-primary"  onclick="window.location.href='http://www.instagram.com/ensoelectric/'" style="background:#ED2939; border-color:#ED2939; border-radius:0;"><i class="fa fa-instagram" aria-hidden="true"></i> СМОТРИТЕ БОЛЬШЕ В INSTAGRAM</button></div>
+        <div style="padding:90px 0 45px 0; text-align: center;"><button type="button" class="btn btn-primary"  onclick="window.open('http://www.instagram.com/ensoelectric/','_blank')" style="background:#ED2939; border-color:#ED2939; border-radius:0;"><i class="fa fa-instagram" aria-hidden="true"></i> СМОТРИТЕ БОЛЬШЕ В INSTAGRAM</button></div>
     </article>
 </div>
 <div class="container">
@@ -162,7 +162,7 @@ keywords: ""
           <p class="article-paragraph"> Возможно, Ваш племянник может смонтировать электрику бесплатно. Мы тоже можем сделать это, только сделать на самом деле, профессионально и за деньги. Стоимость работ отличается в каждом конкретном случае и начинается <strong>от 600 рублей</strong> за квадратный метр площади помещения.
           <div class="row price-items">
               <div class="col-md-4 col-sm-12 col-xs-12 float-shadow card" data-toggle="modal" data-target="#OFFER" data-whatever="@minimal" title="Оставить заявку" style="cursor: pointer;">
-                <div class="image minimal"><span class="label label-danger" style="position:absolute; top:0; right:10%">Популярный!</span></div>
+                <div class="image minimal"><span class="label label-danger" style="position:absolute; top:0; right:10%">популярно</span></div>
                 <div class="title"><span><i class="fa fa-star" aria-hidden="true"></i></span>MINIMAL</div>
                 <div class="description">Иногда самый оптимальный вариант! Вас смущает определение «минимальная»? На самом деле, даже эта комплектация обеспечит комфорт и безопастность Вам и Вашим близким..</div>
                 <div class="cost">
@@ -209,11 +209,12 @@ keywords: ""
               </div>
 
               <div class="col-md-6" style="text-align:right;">
-                   <form action="http://formspree.io/hi@ensoelectric.ru" method="post">
+                   <form action="https://formspree.io/hi@ensoelectric.ru" method="post">
                     <input type="hidden" name="_language" value="ru" />
-                    <input type="hidden" name="_next" value="ensoelectric.ru" />
-                    <div><input type="name" placeholder="Имя" name="_replyto"required></div>
-                    <div><input type="email" placeholder="E-mail" name="_replyto"required></div>
+		    <input type="hidden" name="_subject" value="Обратная связь" />
+                    <input type="hidden" name="_next" value="/message" />
+                    <div><input type="text" placeholder="Имя" name="_name" required></div>
+                    <div><input type="email" placeholder="E-mail" name="_replyto" required></div>
                     <div><textarea name="body"  placeholder="Сообщение"></textarea></div>
                     <button type="submit" value="Отправить" class="btn btn-default" style="border-radius:0;">Отправить</button>
                 </form>
