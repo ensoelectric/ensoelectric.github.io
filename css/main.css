@@ -89,7 +89,7 @@ input, textarea{
     vertical-align: baseline;
     border: 0;
     font-size: 2em;
-    margin:0 0 .5em;
+    margin:0;
     font-weight: 300;
     letter-spacing: -.025em;
     line-height: 1.11538;
