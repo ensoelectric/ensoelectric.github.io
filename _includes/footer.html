@@ -1,18 +1,11 @@
-<link rel="stylesheet" href="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/js/jquery.min.js" | prepend: site.baseurl }}">
-
 <!-- Footer -->
 <footer>
-
-  <span class5="footlogo"><a href="/" class="logo"><img src="/img/{{ site.logo }}" alt="logo"></a></span>
-
-  <span class="link"><a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
-
-  <span class="link" span=""><a href="tel:{{ site.tel }}">{{ site.tel }}</a></span>
-
-  <span class="link">Россия, г. Москва</span>
-
-  <span class="copyright">&copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}</span>
-
+  <div class="container">
+    <span class5="footlogo"><a href="/" class="logo"><img src="/img/{{ site.logo }}" alt="logo"></a></span>
+    <span class="link"><a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
+    <span class="link" span=""><a href="tel:{{ site.tel }}">{{ site.tel }}</a></span>
+    <span class="link">Россия, г. Москва</span>
+    <span class="copyright">&copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}</span>
+  </div>
   <!--<p id="back-top"><a href="#top"><span></span></a></p>-->
 </footer>
