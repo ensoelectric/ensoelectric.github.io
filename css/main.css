@@ -1,3 +1,36 @@
+.gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}
+
 html { font-size: 14px; }
 body {
   font: 300 1rem/1.6 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -9,7 +42,7 @@ body {
 }
 a { color: #0088cc; text-decoration: none; }
 a:focus, a:hover { color: #0088cc; text-decoration: underline; }
-article { position:relative; }
+article { position:relative; padding: 9.09091% 0 12.58741%;}
 .container-fluid {
   padding-right: 0;
   padding-left: 0;
@@ -19,7 +52,7 @@ article { position:relative; }
 
 .rotate {display: none !important}
 /*-------- NAV --------*/
-.navbar { margin-bottom: 20px; background: none; }
+.navbar { margin-bottom: 20px; background: none; padding: 0; }
 .nav ul { margin-right: -15px; }
 .nav li a { color: #0088cc; font-weight: 300; text-transform: uppercase; }
 .nav li a:focus, .nav li a:hover {
@@ -38,42 +71,6 @@ article { position:relative; }
   background-color: transparent;
   background-image: none;
   border: 0;
-}
-
-.navbar-toggle .icon-bar { background: #000; }
-/*-------- / NAV -----*/
-.float-shadow:before { background: transparent; }
-
-.visible-phone-block { display:none !important; }
-.visible-tablet-portrait-block { display:none !important; }
-
-.parallax_container { position: relative; margin: 0 auto; padding: 0 0 45px 0; }
-.parallax_container img { display: block; width: 100%; }
-.scene { padding: 0; margin: 0; }
-
-input, textarea{
-    webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    padding: 0;
-    font-family: inherit;
-    font-style: inherit;
-    vertical-align: baseline;
-    font-size: 15px;
-    letter-spacing: .025em;
-    line-height: 1.55556;
-    font-weight: 200;
-    display: block;
-    position: relative;
-    z-index: 2;
-    margin: 0 0 30px;
-    width: 100%;
-    height: 40px;
-    color: #000;
-    border: 0;
-    background-color: transparent;
-    border-bottom: 1px solid rgba(144,158,167,.5);
-    border-radius: 0;
 }
 
 .modal-content{
@@ -108,21 +105,39 @@ input, textarea{
     border:1px solid white;
 }
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-    article { padding: 90px 0 0 0; }
+    /*article { border-bottom: 1px solid rgba(144,158,167,.5);}*/
     .intro { font-size: 1.5rem; margin-top: 30px; }
     .mailus {margin-top:2.5rem; font-size:1.1rem; text-align:right;}
 
-    .article-title{
-      font-size: 3rem;
-      text-align: center;
-      color: rgb(51,51,51);
-      font-weight: 300;
-      margin: 0 0 .4em 0;
-      letter-spacing: -.05em;
-      text-transform: uppercase;
+    h1{
+      font-size: 2rem;
+      font-weight: 200;
+      letter-spacing: -.025em;
+			line-height: 1.11538;
+			color: #000;
     }
+		
+		h2{
+			font-weight: 100;
+			letter-spacing: -.035em;
+			line-height: 1.11538;
+			color: #8d8f9a;
+		}
+		
+		p{
+			color: #000;
+			letter-spacing: .025em;
+			line-height: 1.55556;
+			font-weight: 300;
+			margin-bottom: 1.7em;
+		}
 
+		.pp{
+			margin-top: 1.7em;
+			line-height: 1.55556;
+			font-weight: 300;
+			margin-bottom: 4.5em;
+		}
     .article-paragraph {
       font-size: 1.35rem;
       margin:0 auto;
@@ -134,29 +149,7 @@ input, textarea{
     .article-paragraph strong{font-weight:normal;}
     .spacer{width:100%; height:50px;}
 
-    .parallax_container { width: 800px; }
-    .desc{ position:absolute; text-align:left;  line-height:1.2; font-size:1rem; }
-
-    .desc.one{ top:146px; left:-8px; width:190px; }
-    .desc.two { top:186px; left:-100px; width:190px; }
-    .desc.three { top:445px; left:-10px; width:170px;}
-    .desc.four { top:575px; left:-70px; width:190px;}
-    .desc.five { top:70px; left:720px; width:190px;}
-    .desc.six { top:160px; left:675px; width:190px;}
-    .desc.seven { top:246px; left:695px; width:190px;}
-    .desc.eight { top:385px; left:680px; width:190px;}
-    .desc.nine { top:480px; left:670px; width:190px;}
-    .desc.ten { top:60px; left:-185px; width:260px;}
-    .desc.eleven { top:260px; left:-175px; width:230px;}
-    .desc.twelve { top:470px; left:-195px; width:290px;}
-    .desc.thirteen { top:70px; left:730px; width:250px;}
-    .desc.fourteen { top:295px; left:725px; width:250px;}
-    .desc.fifteen { top:535px; left:720px; width:250px;}
-
-    .desc.sixteen { font-size:1.2em; font-weight: 600; top:120px; left:0px; width:190px; color: #ff9101}
-    .desc.seventeen {font-size:1.2em; font-weight: 600; top:235px; left:0px; width:250px; color: #ff9101}
-    .desc.eighteen {font-size:1.2em; font-weight: 600; top:425px; left:0px; width:250px;  color: #ff9101}
-
+    
     .title { padding: 0;
     margin: 0;
     vertical-align: baseline;
@@ -178,264 +171,10 @@ input, textarea{
     font-weight: 300;
     letter-spacing: -.025em;
     }
-    p { font-size: 1.1rem;     padding: 0;
-    margin: 0;
-    vertical-align: baseline;
-    border: 0;
-    font-size: 16px;
-    color: #000;
-    letter-spacing: .025em;
-    line-height: 1.55556;
-    font-weight: 300;
-    margin-bottom: 3em;
-    }
-
-
-    .note { margin: 0 auto; padding: 35px 0 35px 0; font-size: .8rem; text-align: center; }
-
-    .card { text-align: center; }
-    .card .image { width: 160px; height: 160px; margin:0 auto; }
-    .card .minimal { background: url(/img/minimal.png) center center no-repeat; }
-    .card .standart { background: url(/img/standart.png) no-repeat center center; }
-    .card .comfort { background: url(/img/comfort.png) no-repeat center center; }
-    .card .title span { display: block; margin: 15px 0 0; font: 300 1.5rem Roboto; }
-    .card .title { margin: 0 0 6px; font: 400 1.8rem Roboto; }
-    .card .description { font: 300 1.2rem/1.6 Roboto; padding:0 1rem; }
-    .card .cost { margin:15px 0 6px; width: 100%; }
-    .card .cost .sum { font: 500 1.8rem Roboto; letter-spacing: 0; display:inline-block; text-align: right; white-space: nowrap; }
-    .card .cost .description { font: 200 1rem/1 Roboto; display:inline-block; text-align: left; margin-left: 2%; padding-top: 9px; }
-
+  
     footer { vertical-align: middle; margin: 0 auto; padding: 35px 0 0 0; font-size: .9rem; }
     footer img { float: left; margin: 14px 50px 0 0; width: auto; height: 20px; }
     .link { line-height: 50px; border-left: 1px solid #b3b3b3; padding-left: 13px; margin-right: 13px; font-size: 1rem; }
     .copyright { float:right; margin-right: 0; border:0; line-height: 50px; padding-left: 13px; margin-right: 13px; font-size: 1rem; }
-  }
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px),   /*-----iPhone4----*/
-        only screen and (min-device-width: 320px) and (max-device-height: 568px),
-        only screen and (min-device-width: 375px) and (max-device-height: 667px),
-        only screen and (min-device-width: 414px) and (max-device-height: 736px),
-        only screen and (min-device-width: 320px) and (max-device-height: 640px),
-        only screen and (min-device-width: 320px) and (max-device-height: 640px),
-        only screen and (min-device-width: 360px) and (max-device-height: 640px){
-          article { padding: 30px 0 20px; }
-          .mailus {margin-top:2.5rem; font-size:1rem; text-align:left;}
-          .intro { font-size: 1.15rem; }
-          .article { font-size: 1.1rem; max-width:100%; text-align: left; }
-          .icon:before { padding-left:0; display: none !important; }
-          .article-title{
-            font-size: 1.5rem;
-            font-weight: 300;
-            text-align: left;
-            text-transform: uppercase;
-            padding-bottom: 1rem;
-          }
-    .article-paragraph strong{font-weight:normal;}
-          .visible-phone-block { display: block !important; }
-
-          .parallax_container{display: none !important}
-
-          .title { font-size: 1.1rem; font-weight: 600; }
-          p { font-size: 1rem; }
-         
-
-          footer { vertical-align: middle; margin: 0 auto; padding: 35px 0 0; font-size: .9rem; }
-          footer img {margin: 14px 0 0 0; width: auto; height: 20px; }
-          .link { display:none !important; }
-          .copyright { float:right; margin-right: 0; border:0; line-height: 50px; margin-right: 13px; font-size: .9rem; }
-        }
-
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait),
-          only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait),
-          only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait),
-          only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait),
-          only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait),
-          only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait),
-          only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait){
-            .visible-phone-portrait-block { display: block !important; }
-            .hidden-phone-portrait { display:none !important; }
-            .max-width-mobile-portrait { width:100%; }
-
-            .mailus { display: none !important; }
-            .intro { font-size: 1.15rem; margin-top: 30px; }
-
-            .card { text-align: left; margin-bottom: 25px; text-align:center;}
-            .card .image { width: 160px; height: 160px; margin:0 auto;}
-            .card .minimal { background: url(/img/minimal.png) center center no-repeat; }
-            .card .standart { background: url(/img/standart.png) no-repeat center center; }
-            .card .comfort { background: url(/img/comfort.png) no-repeat center center; }
-            .card .title span { display: block; margin: 15px 0 0; font: 300 1rem Roboto; }
-            .card .title { margin: 0 0 6px; font: 400 1.5rem Roboto; }
-            .card .description { font: 300 1rem/1.2 Roboto; padding:0 1rem;}
-            .card .cost { margin:0; }
-            .card .cost .sum { font: 500 2rem Roboto; letter-spacing: -.1; display:inline-block; text-align: right; white-space: nowrap; }
-            .card .cost .description { font: 200 1rem/1 Roboto; display:inline-block; text-align: left; margin-left: 2%; padding-top: 9px; }
-
-          .note{font-size:.8rem;}
-
-                     }
-
-@media  only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape),  /* iPhone 4 */
-        only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape),   /* iPhone 5 */
-        only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape),   /* iPhone 6 */
-        only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape),   /* iPhone 6+ */
-        only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape),   /* Samsung Galaxy S3 */
-        only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape),   /* Samsung Galaxy S4 */
-        only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape){   /* Samsung Galaxy S5 */
-          .visible-phone-block{ display: block !important; }
-
-          .mailus {margin-top:2.5rem; font-size:1rem; text-align:left;}
-          .intro { font-size: 1.15rem; margin-top: 30px; }
-
-          .card { text-align: left; margin-bottom: 25px;}
-          .card .image { width: 160px; height: 160px; margin:0 15px 0 0; float: left; }
-          .card .minimal { background: url(/img/minimal.png) center center no-repeat; }
-          .card .standart { background: url(/img/standart.png) no-repeat center center; }
-          .card .comfort { background: url(/img/comfort.png) no-repeat center center; }
-          .card .title span { display: block; margin: 15px 0 0; font: 300 1rem Roboto; }
-          .card .title { margin: 0 0 6px; font: 400 1.5rem Roboto; }
-          .card .description { font: 300 1rem/1.2 Roboto; padding:0 1rem;}
-          .card .cost { margin:0; }
-          .card .cost .sum { font: 500 2rem Roboto; letter-spacing: -.1; display:inline-block; text-align: right; white-space: nowrap; }
-          .card .cost .description { font: 200 1rem/1 Roboto; display:inline-block; text-align: left; margin-left: 2%; padding-top: 9px; }
-
-          .note{ text-align: left; font-size:.8rem; margin-bottom: 25px}
-          .questions { padding: 0 0 20px; }
-
-          footer { vertical-align: middle; margin: 0 auto; padding: 35px 0 0; font-size: .9rem; }
-          footer img {margin: 14px 50px 0 0; width: auto; height: 20px; }
-          .link { display:none !important; }
-          .copyright { float:right; margin-right: 0; border:0; line-height: 50px; margin-right: 13px; font-size: 1rem; }
-}
-
-/*iPad in portrait & landcsrape-------*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
-            article { padding: 30px 0 20px; }
-            .article-title{
-              font-size: 2rem;
-              font-weight: 300;
-              text-transform: uppercase;
-            }
-            .article-paragraph {
-              font-size: 1.35rem;
-              margin:0 auto;
-              padding: 0;
-              padding: 25px 0 35px 0;
-            }
-    .article-paragraph strong{font-weight:normal;}
-
-            .intro { font-size: 1.5rem; margin-top: 30px; }
-            .mailus {margin-top:2.5rem; font-size:1.1rem; text-align:right;}
-
-            .note { margin: 0; padding: 0; font-size: .8rem; }
-
-            .title { font-size: 1.5rem; font-weight: 600; }
-            p { font-size: 1.15rem; }
 
 
-
-
-}
-
-/*iPad in landscape-----------------*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
-        .article-title { text-align: center; }
-        .article-paragraph { text-align: center; }
-
-    .parallax_container { width: 550px; }
-    .desc{ position:absolute; text-align:left;  line-height:1.2; font-size:1rem; }
-
-    .desc.one{ top:96px; left:-35px; width:190px; }
-    .desc.two { top:125px; left:-130px; width:190px; }
-    .desc.three { top:297px; left:-45px; width:170px;}
-    .desc.four { top:394px; left:-114px; width:209px;}
-    .desc.five { top:34px; left:502px; width:190px;}
-    .desc.six { top:96px; left:469px; width:190px;}
-    .desc.seven { top:160px; left:483px; width:215px;}
-    .desc.eight { top:263px; left:481px; width:215px;}
-    .desc.nine { top:333px;left:466px; width:190px;}
-    .desc.ten { top:33px; left:-165px; width:246px;}
-    .desc.eleven { top:176px; left:-175px; width:230px;}
-    .desc.twelve { top:295px; left:-118px; width:260px;}
-    .desc.thirteen { top:24px; left:506px; width:250px;}
-    .desc.fourteen { top:172px; left:520px; width:250px;}
-    .desc.fifteen { top:368px; left:495px; width:250px;}
-
-    .desc.sixteen { font-size:1.2em; font-weight: 600; top:120px; left:0px; width:190px; color: #ff9101}
-    .desc.seventeen {font-size:1.2em; font-weight: 600; top:235px; left:0px; width:250px; color: #ff9101}
-    .desc.eighteen {font-size:1.2em; font-weight: 600; top:425px; left:0px; width:250px;  color: #ff9101}
-
-        .note { margin: 15px 0; text-align:center; }
-        .card { text-align: center;}
-        .card .image { width: 160px; height: 160px; margin:0 auto; }
-        .card .minimal { background: url(/img/minimal.png) center center no-repeat; }
-        .card .standart { background: url(/img/standart.png) no-repeat center center; }
-        .card .comfort { background: url(/img/comfort.png) no-repeat center center; }
-        .card .title span { display: block; margin: 15px 0 0; font: 300 1rem Roboto; }
-        .card .title { margin: 0 0 6px; font: 400 1.8rem Roboto; }
-        .card .description { font: 300 1rem/1.6 Roboto; padding:0 1rem; }
-        .card .cost { margin:15px 0 6px; width: 100%; }
-        .card .cost .sum { font: 500 1.8rem Roboto; letter-spacing: 0; display:inline-block; text-align: right; white-space: nowrap; }
-        .card .cost .description { font: 200 1rem/1 Roboto; display:inline-block; text-align: left; margin-left: 2%; padding-top: 9px; }
-
-        .spacer{width:100%; height:50px;}
-
-        footer { vertical-align: middle; margin: 0 auto; padding: 35px 0 0 0; font-size: .9rem; }
-        footer img { float: left; margin: 14px 50px 0 0; width: auto; height: 20px; }
-        .link { line-height: 50px; border-left: 1px solid #b3b3b3; padding-left: 13px; margin-right: 13px; font-size: .9rem; }
-        .copyright { float:right; margin-right: 0; border:0; line-height: 50px; margin-right: 13px; font-size: .9rem; }
-}
-
-/*iPad in portrait-----------------*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    .visible-tablet-portrait-block { display:block !important;}
-    .parallax_container{display: none !important}
-
-    .card { text-align: left; }
-    .card .image { width: 160px; height: 160px; margin:0 15px 0 0; float: left; }
-    .card .minimal { background: url(/img/minimal.png) center center no-repeat; }
-    .card .standart { background: url(/img/standart.png) no-repeat center center; }
-    .card .comfort { background: url(/img/comfort.png) no-repeat center center; }
-    .card .title span { display: block; margin: 15px 0 0; font: 300 1rem Roboto; }
-    .card .title { margin: 0 0 6px; font: 400 1.5rem Roboto; }
-    .card .description { font: 300 1rem/1.2 Roboto; padding:0 1rem;}
-    .card .cost { margin:0; }
-    .card .cost .sum { font: 500 2rem Roboto; letter-spacing: -.1; display:inline-block; text-align: right; white-space: nowrap; }
-    .card .cost .description { font: 200 1rem/1 Roboto; display:inline-block; text-align: left; margin-left: 2%; padding-top: 9px; }
-
-    footer { vertical-align: middle; margin: 0 auto; padding: 35px 0 0 0; font-size: .9rem; }
-        footer img { float: left; margin: 14px 13px 0 0; width: auto; height: 20px; }
-        .link { line-height: 50px; border-left: 1px solid #b3b3b3; padding-left: 13px; margin-right: 13px; }
-        .copyright { float:right; margin-right: 0; border:0; line-height: 50px; margin-right: 13px; font-size: .9rem; }
-
-      }
-
-
-
-
-
-      .responsive-image {
-  max-width: 100%;
-}
-
-.cell img {
-  display: block;
-}
-
-
-@media screen and (min-width: 600px) {
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .cell {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .cell {
-    width: calc(100% / 4);
-  }
-}
